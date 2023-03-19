@@ -1,12 +1,11 @@
 .service-container{
-    width: 400px;
     margin-bottom: 10px;
     border: 1px solid lightgrey;
     border-radius: 5px;
 }
 .service-container img{
     object-fit: contain;
-    width: 400px;
+    width: 100%;
 }
 .book-button{
     display: flex;

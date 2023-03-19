@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <div>
             <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={3000}>
                 <img
                 className="d-block w-100"
                 src={banner1}
@@ -23,7 +23,7 @@ const Banner = () => {
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100"
                 src={banner2}
@@ -35,7 +35,7 @@ const Banner = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1000}>
                 <img
                 className="d-block w-100"
                 src={banner3}

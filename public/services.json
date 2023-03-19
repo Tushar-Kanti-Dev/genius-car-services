@@ -1,0 +1,86 @@
+[
+
+    {
+        "id": 1,
+        "price": 800,
+        "ratings": 5,
+        "ratingsCount": 3725,
+        "img": "https://i.pinimg.com/736x/1a/93/f2/1a93f2073b0ce7d95e4a3781295340cb.jpg",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+    {
+        "id": 2,
+        "name": "Lembergini-gp-9",
+        "price": 1390,
+        "ratings": 4.5,
+        "ratingsCount": 2025,
+        "img": "https://images.unsplash.com/photo-1637476349345-d8f88e11e573?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fHN1cGVyJTIwYmlrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+    {
+        "id": 3,
+        "name": "GT-g-3300",
+        "price": 1060,
+        "ratings": 4,
+        "ratingsCount": 1025,
+        "img": "https://images.unsplash.com/photo-1656767112164-f9f59766357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEwfHxzdXBlciUyMGJpa2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+    {
+        "id": 4,
+        "name": "Yahama-R1",
+        "price": 1260,
+        "ratings": 5,
+        "ratingsCount": 4025,
+        "img": "https://images.unsplash.com/photo-1619022477044-f2950e601d98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzdXBlciUyMGJpa2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+      
+    {
+        "id": 5,
+        "name": "BMW-Adva-900",
+        "price": 1123,
+        "ratings": 3,
+        "ratingsCount": 625,
+        "img": "https://images.unsplash.com/photo-1637045602770-c7e1e47161b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJtdyUyMGJpa2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+    {
+        "id": 6,
+        "name": "Hayaly-R1200",
+        "price": 893,
+        "ratings": 4,
+        "ratingsCount": 987,
+        "img": "https://images.unsplash.com/photo-1598808503491-a8ebebc0b55d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGJtdyUyMGJpa2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+      
+    {
+        "id": 7,
+        "name": "Ducati-Panigale-1200",
+        "price": 900,
+        "ratings": 4.5,
+        "ratingsCount": 767,
+        "img": "https://images.unsplash.com/photo-1623756005624-cacdc88f5adf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGR1Y2F0aSUyMGJpa2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+ 
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      },
+    {
+        "id": 8,
+        "name": "Kayasaki-ZX-10-R",
+        "price": 1500,
+        "ratings": 5,
+        "ratingsCount": 1767,
+        "img": "https://images.unsplash.com/photo-1560319734-fe91ab681d85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8engxMHJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "quantity": 0,
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi blanditiis sapiente suscipit libero. Aspernatur?"
+      }
+      
+]

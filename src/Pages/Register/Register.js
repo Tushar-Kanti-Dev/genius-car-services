@@ -18,6 +18,7 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    const agree = event.target.terms.checked;
 
     createUserWithEmailAndPassword(email, password);
   };
@@ -62,9 +63,9 @@ const Register = () => {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
+            <Form.Check type="checkbox" name="terms" label="Accept Terms and Conditions" />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="dark p-2 m-2 w-50 d-block mx-auto" type="submit">
             Register
           </Button>
         </Form>
@@ -80,7 +81,6 @@ const Register = () => {
         </p>
         <SocialLogin></SocialLogin>
       </div>
-      
     </>
   );
 };

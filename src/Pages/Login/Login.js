@@ -1,6 +1,7 @@
+import { async } from "@firebase/util";
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Login.css";
@@ -40,9 +41,17 @@ const Login = () => {
     }
     let errorMessage ;
     if (error) {
-
           errorMessage= <p>Error: {error?.message}</p>
-
+      }
+      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+      const handleResetPassword = async() =>{
+        const email = emailRef.current.value;
+        const success = await sendPasswordResetEmail(
+          email
+        );
+        if (success) {
+          alert('Sent email');
+        }
       }
   return (
     <div className="container w-50 mx-auto">
@@ -60,15 +69,16 @@ const Login = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control ref={passwordRef} type="password" placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
+        
+        <Button variant="primary w-50 mx-auto d-block mt-2 mb-2 p-2" type="submit">
           Login
         </Button>
       </Form>
-      <p>New Member?<Link to='/register' onClick={navigateToRegister} className="text-danger text-decoration-none m-2">Register Now</Link></p>
       <p>{errorMessage}</p>
+      <p>Forget Password?<Link to='/register' onClick={handleResetPassword} className="text-primary text-decoration-none m-2">Reset Password</Link></p>
+      <p>New Member?<Link to='/register' onClick={navigateToRegister} className="text-primary text-decoration-none m-2">Register Now</Link></p>
+      
+      
       <SocialLogin></SocialLogin>
     </div>
   );

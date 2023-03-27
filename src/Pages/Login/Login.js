@@ -38,6 +38,12 @@ const Login = () => {
     const navigateToRegister = () =>{
         navigate('/register')
     }
+    let errorMessage ;
+    if (error) {
+
+          errorMessage= <p>Error: {error?.message}</p>
+
+      }
   return (
     <div className="container w-50 mx-auto">
         <h2 className="text-center mt-3">Login Form</h2>
@@ -62,6 +68,7 @@ const Login = () => {
         </Button>
       </Form>
       <p>New Member?<Link to='/register' onClick={navigateToRegister} className="text-danger text-decoration-none m-2">Register Now</Link></p>
+      <p>{errorMessage}</p>
       <SocialLogin></SocialLogin>
     </div>
   );

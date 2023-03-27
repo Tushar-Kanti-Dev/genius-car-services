@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Login.css";
+import SocialLogin from "./SocialLogin/SocialLogin";
 
 const Login = () => {
 
@@ -57,10 +58,11 @@ const Login = () => {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Login
         </Button>
       </Form>
       <p>New Member?<Link to='/register' onClick={navigateToRegister} className="text-danger text-decoration-none m-2">Register Now</Link></p>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

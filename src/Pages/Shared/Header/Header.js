@@ -44,7 +44,7 @@ const Header = () => {
             </NavDropdown> */}
           </Nav>
           <Nav>
-          <Nav.Link as={Link} to="/about">About</Nav.Link>
+          {/* <Nav.Link as={Link} to="/about">About</Nav.Link> */}
           <div className="user-name mx-auto mt-lg-2">
           <p className='text-white text-center me-1'>{user?.email}</p>
           </div>

@@ -1,32 +1,37 @@
 import React, { useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import { Button, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import SocialLogin from "../Login/SocialLogin/SocialLogin";
+import { sendEmailVerification } from "firebase/auth";
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
   const [createUserWithEmailAndPassword, user] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
   const navigate = useNavigate();
 
   const navigateToLogin = () => {
     navigate("/login");
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
     // const agree = event.target.terms.checked;
-
-    if (agree) {
-      createUserWithEmailAndPassword(email, password);
-    }
+     await createUserWithEmailAndPassword(email, password);
+    const success = await updateProfile({ displayName:name});
+          if (success) {
+            alert('Updated profile');
+          }
+    navigate("/home");
   };
   if (user) {
-    navigate("/home");
+    console.log(user);
   }
 
   return (

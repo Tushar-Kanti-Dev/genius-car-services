@@ -26,7 +26,7 @@ const Register = () => {
      await createUserWithEmailAndPassword(email, password);
     const success = await updateProfile({ displayName:name});
           if (success) {
-            alert('Updated profile');
+            alert('Register sucessful');
           }
     navigate("/home");
   };

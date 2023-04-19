@@ -10,6 +10,7 @@ import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/Header/NotFound/NotFound';
+import AddService from './Pages/AddService/AddService';
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
         <Route path='/procedcheck' element={
           <RequiredAuth>
             <ProcedCheck></ProcedCheck>
+          </RequiredAuth>
+        }></Route>
+        <Route path='/add-service' element={
+          <RequiredAuth>
+            <AddService/>
           </RequiredAuth>
         }></Route>
 

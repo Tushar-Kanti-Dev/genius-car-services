@@ -45,6 +45,12 @@ const Header = () => {
           </Nav>
           <Nav>
           {/* <Nav.Link as={Link} to="/about">About</Nav.Link> */}
+          {
+            user && <>
+            <Nav.Link as={Link} to="/add-service">Add-service</Nav.Link>
+            <Nav.Link as={Link} to="/manage-service">Manage-service</Nav.Link>
+            </>
+          }
           <div className="user-name mx-auto mt-lg-2">
           <p className='text-white text-center me-1'>{user?.email}</p>
           </div>

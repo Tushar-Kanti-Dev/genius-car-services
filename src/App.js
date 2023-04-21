@@ -11,6 +11,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/Header/NotFound/NotFound';
 import AddService from './Pages/AddService/AddService';
+import ManageService from './Pages/ManageService/ManageService';
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
         <Route path='/add-service' element={
           <RequiredAuth>
             <AddService/>
+          </RequiredAuth>
+        }></Route>
+        <Route path='/manage-service' element={
+          <RequiredAuth>
+            <ManageService/>
           </RequiredAuth>
         }></Route>
 
